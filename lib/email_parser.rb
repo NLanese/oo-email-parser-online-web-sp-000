@@ -11,7 +11,9 @@ class EmailAddressParser
   end
 
   def parse
-
+    rArray = []
+    rArray << @listOfEmails.split(" ")
+    return rArray
   end
 
 end
