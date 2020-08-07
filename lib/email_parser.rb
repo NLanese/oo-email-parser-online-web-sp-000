@@ -4,20 +4,14 @@
 # or whitespace (' ').
 class EmailAddressParser
 
+  attr_accessor :listOfEmails
+
   def initialize(listOfEmails)
     @listOfEmails = listOfEmails
   end
 
   def parse
-    rArray = []
-    rArray = @listOfEmails.split(" ")
-    rArray = @listOfEmails.split(",")
-    rArray.each do | email |
-      if (email.start_with?(" "))
-        email = email.chomp(" ")
-      end
-    end
-    rArray
+
   end
 
 end
